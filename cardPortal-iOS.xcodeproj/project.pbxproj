@@ -13,6 +13,14 @@
 		4943277B256E12F2005AD2BB /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4943277A256E12F2005AD2BB /* Preview Assets.xcassets */; };
 		49432786256E12F3005AD2BB /* cardPortal_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49432785256E12F3005AD2BB /* cardPortal_iOSTests.swift */; };
 		49432791256E12F3005AD2BB /* cardPortal_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49432790256E12F3005AD2BB /* cardPortal_iOSUITests.swift */; };
+		494327A52572D591005AD2BB /* CameraController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494327A42572D591005AD2BB /* CameraController.swift */; };
+		49D25BDE2585B885005CA9C2 /* CreatingAndCombiningViews in Resources */ = {isa = PBXBuildFile; fileRef = 49D25BDD2585B885005CA9C2 /* CreatingAndCombiningViews */; };
+		49EF4989258AF40000F722B1 /* CardRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EF4988258AF40000F722B1 /* CardRow.swift */; };
+		49EF498E258AF64500F722B1 /* CardList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EF498D258AF64500F722B1 /* CardList.swift */; };
+		49EF4995258AF93800F722B1 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EF4994258AF93800F722B1 /* Card.swift */; };
+		49EF499E258AFB6B00F722B1 /* cards.json in Resources */ = {isa = PBXBuildFile; fileRef = 49EF499D258AFB6B00F722B1 /* cards.json */; };
+		49EF49A6258AFC8700F722B1 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EF49A5258AFC8700F722B1 /* ModelData.swift */; };
+		49EF49AB258B04C300F722B1 /* CardDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49EF49AA258B04C300F722B1 /* CardDetails.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +53,14 @@
 		4943278C256E12F3005AD2BB /* cardPortal-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "cardPortal-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49432790256E12F3005AD2BB /* cardPortal_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = cardPortal_iOSUITests.swift; sourceTree = "<group>"; };
 		49432792256E12F3005AD2BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		494327A42572D591005AD2BB /* CameraController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraController.swift; sourceTree = "<group>"; };
+		49D25BDD2585B885005CA9C2 /* CreatingAndCombiningViews */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CreatingAndCombiningViews; path = ../../../Downloads/CreatingAndCombiningViews; sourceTree = "<group>"; };
+		49EF4988258AF40000F722B1 /* CardRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardRow.swift; sourceTree = "<group>"; };
+		49EF498D258AF64500F722B1 /* CardList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardList.swift; sourceTree = "<group>"; };
+		49EF4994258AF93800F722B1 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		49EF499D258AFB6B00F722B1 /* cards.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = cards.json; sourceTree = "<group>"; };
+		49EF49A5258AFC8700F722B1 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		49EF49AA258B04C300F722B1 /* CardDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDetails.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +111,15 @@
 		49432772256E12F0005AD2BB /* cardPortal-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				49EF499C258AFB4600F722B1 /* Resources */,
+				49EF4993258AF91300F722B1 /* Models */,
+				49EF4992258AF8FF00F722B1 /* Views */,
 				49432773256E12F0005AD2BB /* cardPortal_iOSApp.swift */,
-				49432775256E12F0005AD2BB /* ContentView.swift */,
 				49432777256E12F2005AD2BB /* Assets.xcassets */,
 				4943277C256E12F2005AD2BB /* Info.plist */,
 				49432779256E12F2005AD2BB /* Preview Content */,
+				494327A42572D591005AD2BB /* CameraController.swift */,
+				49D25BDD2585B885005CA9C2 /* CreatingAndCombiningViews */,
 			);
 			path = "cardPortal-iOS";
 			sourceTree = "<group>";
@@ -128,6 +148,34 @@
 				49432792256E12F3005AD2BB /* Info.plist */,
 			);
 			path = "cardPortal-iOSUITests";
+			sourceTree = "<group>";
+		};
+		49EF4992258AF8FF00F722B1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49EF498D258AF64500F722B1 /* CardList.swift */,
+				49EF4988258AF40000F722B1 /* CardRow.swift */,
+				49432775256E12F0005AD2BB /* ContentView.swift */,
+				49EF49AA258B04C300F722B1 /* CardDetails.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		49EF4993258AF91300F722B1 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				49EF4994258AF93800F722B1 /* Card.swift */,
+				49EF49A5258AFC8700F722B1 /* ModelData.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		49EF499C258AFB4600F722B1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				49EF499D258AFB6B00F722B1 /* cards.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +283,8 @@
 			files = (
 				4943277B256E12F2005AD2BB /* Preview Assets.xcassets in Resources */,
 				49432778256E12F2005AD2BB /* Assets.xcassets in Resources */,
+				49D25BDE2585B885005CA9C2 /* CreatingAndCombiningViews in Resources */,
+				49EF499E258AFB6B00F722B1 /* cards.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				494327A52572D591005AD2BB /* CameraController.swift in Sources */,
+				49EF4995258AF93800F722B1 /* Card.swift in Sources */,
 				49432776256E12F0005AD2BB /* ContentView.swift in Sources */,
+				49EF498E258AF64500F722B1 /* CardList.swift in Sources */,
+				49EF49AB258B04C300F722B1 /* CardDetails.swift in Sources */,
+				49EF4989258AF40000F722B1 /* CardRow.swift in Sources */,
 				49432774256E12F0005AD2BB /* cardPortal_iOSApp.swift in Sources */,
+				49EF49A6258AFC8700F722B1 /* ModelData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,6 +475,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"cardPortal-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = R78MT2728B;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "cardPortal-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
@@ -440,6 +497,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"cardPortal-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = R78MT2728B;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = "cardPortal-iOS/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
